@@ -3,11 +3,13 @@
 import About from "@/components/About";
 import Background from "@/components/Background";
 import Contact from "@/components/Contact";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import TypingText from "@/components/TypingText";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter, FaDownload } from "react-icons/fa";
 
 export default function Home() {
   
@@ -64,35 +66,41 @@ export default function Home() {
               </span>
             </motion.p>
 
-            {/* BUTTON */}
-            <motion.a
+            {/* BUTTONS */}
+            <motion.div
               variants={itemVariants}
-              href="#about"
-              className="inline-block mt-8 bg-indigo-600 text-white px-8 py-4 rounded-full shadow-lg font-semibold text-lg"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-              animate={{
-                scale: [1, 1.02, 1],
-                transition: {
-                  duration: 2,
-                  repeat: Infinity,
-                  repeatType: "loop",
-                  ease: "easeInOut",
-                },
-              }}
+              className="mt-10 flex flex-wrap gap-4"
             >
-              About Me ↓
-            </motion.a>
+              <motion.a
+                href="#projects"
+                className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-full shadow-lg font-semibold text-lg"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                View My Work
+              </motion.a>
+              <motion.a
+                href="/Deepak-Jadiwal-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white text-indigo-600 px-8 py-3 rounded-full shadow-lg font-semibold text-lg border-2 border-indigo-600"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                <FaDownload /> Download CV
+              </motion.a>
+            </motion.div>
 
             {/* SOCIAL ICONS */}
             <motion.div
               variants={containerVariants}
-              className="flex gap-6 mt-8 text-2xl"
+              className="flex gap-6 mt-10 text-3xl"
             >
-              <motion.a variants={itemVariants} className="hover:text-indigo-600 transition-colors" href="#"><FaLinkedin /></motion.a>
-              <motion.a variants={itemVariants} className="hover:text-indigo-600 transition-colors" href="#"><FaGithub /></motion.a>
-              <motion.a variants={itemVariants} className="hover:text-indigo-600 transition-colors" href="#"><FaTwitter /></motion.a>
+              <motion.a variants={itemVariants} className="text-gray-500 hover:text-indigo-600 transition-colors" href="https://www.linkedin.com/in/deepak-jadiwal-b3225a228/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></motion.a>
+              <motion.a variants={itemVariants} className="text-gray-500 hover:text-indigo-600 transition-colors" href="https://github.com/Deepak-Jadiwal" target="_blank" rel="noopener noreferrer"><FaGithub /></motion.a>
+              <motion.a variants={itemVariants} className="text-gray-500 hover:text-indigo-600 transition-colors" href="#" target="_blank" rel="noopener noreferrer"><FaTwitter /></motion.a>
             </motion.div>
           </motion.div>
 
@@ -125,7 +133,9 @@ export default function Home() {
         </div>
       </main>
       <About />
+      <Experience />
       <Skills />
+      <Projects />
       <Contact />
     </>
   );

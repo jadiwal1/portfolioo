@@ -15,11 +15,11 @@ const About = () => {
             About <span className="text-indigo-600">Me</span>
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Hello! I'm Deepak Jadiwal, a passionate Full Stack Developer based in India. 
-            I hold a <span className="font-semibold text-gray-900">BSc in Information Technology (IT)</span> and have over <span className="font-semibold text-gray-900">3 years of professional experience</span> in the tech industry.
+            Hello! I'm Deepak Jadiwal, a Full Stack Developer based in Mumbai with strong FinTech domain experience.
+            I specialize in backend development using <span className="font-semibold text-gray-900">Node.js, Express.js, TypeORM/Prisma, and PostgreSQL/MySQL</span>.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            I specialize in building high-quality web applications using modern technologies. My journey has been driven by a curiosity to learn and a desire to create impactful digital solutions. When I'm not coding, you can find me exploring new tech trends or contributing to open-source projects.
+            I have experience in building secure, scalable APIs for loan aggregation and financial workflows, along with hands-on frontend experience using React.js and Next.js. I am passionate about creating efficient systems and following Clean Architecture principles.
           </p>
         </motion.div>
 

@@ -16,7 +16,7 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            I'm currently looking for new opportunities. Feel free to reach out!
+            I'm currently looking for new opportunities. Feel free to reach out at <a href="mailto:jadiwaldeepak12@gmail.com" className="text-indigo-600 font-medium">jadiwaldeepak12@gmail.com</a>
           </p>
         </motion.div>
 

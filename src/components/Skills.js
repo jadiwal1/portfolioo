@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaReact, FaJs, FaNodeJs } from "react-icons/fa";
-import { SiExpress, SiTypescript, SiPostgresql, SiMysql } from "react-icons/si";
+import { FaReact, FaJs, FaNodeJs, FaAws, FaGitAlt } from "react-icons/fa";
+import { SiExpress, SiTypescript, SiPostgresql, SiMysql, SiPrisma, SiTypeorm, SiNextdotjs, SiTailwindcss, SiNginx, SiRedux } from "react-icons/si";
 
 const skills = [
   { name: "React.js", icon: <FaReact className="text-[#61DAFB]" /> },
@@ -11,6 +11,14 @@ const skills = [
   { name: "MySQL", icon: <SiMysql className="text-[#4479A1]" /> },
   { name: "PostgreSQL", icon: <SiPostgresql className="text-[#336791]" /> },
   { name: "TypeScript", icon: <SiTypescript className="text-[#3178C6]" /> },
+  { name: "Prisma", icon: <SiPrisma className="text-[#2D3748]" /> },
+  { name: "TypeORM", icon: <SiTypeorm className="text-[#FE0C05]" /> },
+  { name: "Next.js", icon: <SiNextdotjs className="text-black" /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-[#06B6D4]" /> },
+  { name: "Redux", icon: <SiRedux className="text-[#764ABC]" /> },
+  { name: "AWS", icon: <FaAws className="text-[#FF9900]" /> },
+  { name: "Nginx", icon: <SiNginx className="text-[#009639]" /> },
+  { name: "Git", icon: <FaGitAlt className="text-[#F05032]" /> },
 ];
 
 const Skills = () => {
